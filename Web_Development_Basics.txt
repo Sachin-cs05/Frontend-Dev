@@ -1,0 +1,36 @@
+﻿Web Development Basics
+1. Difference between Frontend, Backend, and Full-Stack Development
+• Frontend: Handles what users see and interact with, like buttons, colors, and layouts. Example: YouTube homepage design.
+• Backend: Manages data, logic, and server-side operations. Example: Checking your login details on YouTube.
+• Full-Stack: Works on both frontend and backend. Example: A developer who can build the whole website end to end.
+2. Simple Diagram - Client-Server Model
+Client (Browser) → sends request → Server → processes and sends response → Client (Browser displays result).
+3. How a Browser Requests and Displays a Web Page
+1. User enters a URL in the browser.
+2. Browser sends a request to the web server.
+3. Server processes the request and sends back HTML, CSS, JS files.
+4. Browser renders the page and displays it to the user.
+4. Tools Required for Web Development
+• Code Editor (VS Code): Used for writing code.
+• Web Browser (Chrome, Firefox): To view and test websites.
+• Version Control (Git): Helps track and manage code changes.
+• Local Server (XAMPP, Node.js): Runs the website on your computer.
+• Terminal/Command Prompt: Used to run commands and scripts.
+5. What is a Web Server?
+A web server is software that stores, processes, and delivers web pages to users. Examples: Apache, Nginx, Microsoft IIS.
+6. Roles in a Web Project
+• Frontend Developer: Designs and codes the user interface.
+• Backend Developer: Handles server logic and database connections.
+• Database Administrator: Manages and secures the data stored in databases.
+7. Static vs Dynamic Websites
+• Static Website: Fixed content, same for all users. Example: Portfolio website.
+• Dynamic Website: Content changes based on user input or data. Example: Facebook or Amazon.
+8. Web Browsers and Rendering Engines
+1. Google Chrome - Blink engine
+2. Mozilla Firefox - Gecko engine
+3. Microsoft Edge - Blink engine
+4. Safari - WebKit engine
+5. Opera - Blink engine
+Different rendering engines interpret HTML, CSS, and JavaScript differently, affecting how websites look and perform.
+9. Basic Web Architecture Flow
+Client (Browser) → sends request → Web Server → interacts with Database → sends data via APIs → back to Client (Browser).
