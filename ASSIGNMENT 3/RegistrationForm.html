@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+
+    <h2>Course Registration Form</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Student Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="">-- Choose a Course --</option>
+                <option value="web">Web Development</option>
+                <option value="python">Python Programming</option>
+                <option value="java">Java Fundamentals</option>
+                <option value="dbms">Database Management</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+
+        </fieldset>
+
+    </form>
+
+    <h3>Available Course Schedules</h3>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Instructor</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Mr. Sharma</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Ms. Gupta</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>11:00 AM - 1:00 PM</td>
+            <td>Dr. Verma</td>
+        </tr>
+    </table>
+
+</body>
+</html>
