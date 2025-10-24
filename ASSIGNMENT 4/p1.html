@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes Example (Single File)</title>
+</head>
+<body>
+    <h2>My Webpage with Two Iframes</h2>
+    <p>Below are two iframes — one shows my introduction, and the other shows my favorite hobby.</p>
+
+    <iframe 
+        srcdoc="
+        <!DOCTYPE html>
+        <html lang='en'>
+        <head>
+            <meta charset='UTF-8'>
+            <title>My Introduction</title>
+        </head>
+        <body style='background-color:#f0f8ff; font-family:sans-serif;'>
+            <h3>Introduction</h3>
+            <p>Hello! My name is <strong>Sachin Saini</strong>. I am a B.Tech CSE student at GLA University, Mathura.</p>
+            <p>I enjoy learning programming languages like <em>Java, Python, and C</em> and building projects that solve real-world problems.</p>
+        </body>
+        </html>
+        " 
+        width="80%" height="250" title="My Introduction"></iframe>
+    <br><br>
+
+    <iframe 
+        srcdoc="
+        <!DOCTYPE html>
+        <html lang='en'>
+        <head>
+            <meta charset='UTF-8'>
+            <title>My Hobby</title>
+        </head>
+        <body style='background-color:#fff0f5; font-family:sans-serif;'>
+            <h3>My Favorite Hobby</h3>
+            <p>My favorite hobby is <strong>coding and problem-solving</strong>.</p>
+            <p>I love spending time on <em>LeetCode</em> and practicing new algorithms to improve my logical thinking.</p>
+        </body>
+        </html>
+        " 
+        width="80%" height="250" title="My Hobby"></iframe>
+</body>
+</html>

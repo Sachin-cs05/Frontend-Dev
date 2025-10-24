@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <form action="#">
+        <!-- Login form: username and password fields -->
+        <!-- A CSRF (Cross-Site Request Forgery) token is a secret value sent with the form
+             to ensure that form submissions originate from the intended site and not from
+             a malicious third-party. In production this token should be generated server-side
+             and verified on submit. -->
+        <label for="username">Username: <input type="text" name="username" id="username" required></label>
+        <br>
+        <br>
+        <label for="password">Password: <input type="password" name="password" id="password" required></label>
+        <br>
+        <!-- Hidden dummy CSRF token (replace with real token from server in production) -->
+        <input type="hidden" name="csrf_token" value="dummytoken1234567890">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

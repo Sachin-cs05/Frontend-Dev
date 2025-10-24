@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="#" method="post" novalidate>
+        <label for="full-name">Name:
+            <input id="full-name" name="fullName" type="text" required autocomplete="name">
+        </label>
+        <br><br>
+
+        <label for="email">Email:
+            <input id="email" name="email" type="email" required autocomplete="email">
+        </label>
+        <br><br>
+
+        <label for="password">Password:
+            <input id="password" name="password" type="password" required minlength="8" autocomplete="new-password">
+        </label>
+        <br><br>
+
+        <label for="confirm-password">Confirm Password:
+            <input id="confirm-password" name="confirmPassword" type="password" required autocomplete="new-password">
+        </label>
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form method="post" action="#">
+        <label for="fullname">Full Name:
+            <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+        </label>
+        <br>
+        <br>
+        <label for="email">Email:
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <br>
+        <br>
+        <label for="subject">Subject:
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </label>
+        <br>
+        <br>
+        <label for="message">Message:
+            <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your message here..." required></textarea>
+        </label>
+        <br>
+        <br>
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>
