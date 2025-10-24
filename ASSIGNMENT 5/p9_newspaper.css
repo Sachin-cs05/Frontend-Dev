@@ -1,0 +1,81 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background and font */
+body {
+  background-color: #f4f1ee;
+  font-family: "Georgia", serif;
+  line-height: 1.7;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Main newspaper container */
+.newspaper {
+  background-color: #fffdf8;
+  padding: 2rem;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading spans all columns */
+.newspaper h1 {
+  column-span: all;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* Column layout for article text */
+article {
+  column-count: 3;
+  column-gap: 2rem;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* Floating image */
+article img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin: 0 1rem 1rem 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Paragraph styling */
+article p {
+  margin-bottom: 1.2rem;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  article {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  article {
+    column-count: 1;
+  }
+
+  article img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 90%;
+  }
+}
