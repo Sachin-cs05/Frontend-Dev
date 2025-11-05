@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison</h1>
+    </header>
+    
+    <main>
+        <section class="comparison-container">
+            <h2>Understanding Box-Sizing Property</h2>
+            
+            <div class="explanation">
+                <p><strong>Box-sizing</strong> controls how the total width and height of an element is calculated.</p>
+                <ul>
+                    <li><strong>content-box</strong> (default): Width and height apply only to the content area.</li>
+                    <li><strong>border-box</strong>: Width and height include content, padding, and border.</li>
+                </ul>
+            </div>
+            
+            <div class="boxes-container">
+                <div class="box content-box">
+                    <h3>Content-Box (Default)</h3>
+                    <p>Width: 200px</p>
+                    <p>Padding: 20px</p>
+                    <p>Border: 5px</p>
+                    <p class="total-width">Total Width: 250px</p>
+                </div>
+                
+                <div class="box border-box">
+                    <h3>Border-Box</h3>
+                    <p>Width: 200px</p>
+                    <p>Padding: 20px</p>
+                    <p>Border: 5px</p>
+                    <p class="total-width">Total Width: 200px</p>
+                </div>
+            </div>
+            
+            <div class="code-example">
+                <h3>CSS Code Example</h3>
+                <pre><code>.content-box {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+}</code></pre>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Box-Sizing Property Demonstration</p>
+    </footer>
+</body>
+</html>

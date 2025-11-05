@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice Page</h1>
+    </header>
+    
+    <main>
+        <section class="element-selector">
+            <h2>Element Selector</h2>
+            <p>This paragraph is styled using an element selector.</p>
+            <p>Another paragraph with the same styling.</p>
+        </section>
+        
+        <section class="class-selector">
+            <h2>Class Selector</h2>
+            <p class="highlight">This paragraph uses a class selector.</p>
+            <p>This paragraph doesn't have the class.</p>
+            <div class="highlight">This div also uses the highlight class.</div>
+        </section>
+        
+        <section id="id-selector">
+            <h2>ID Selector</h2>
+            <p>This paragraph is inside a section with an ID selector.</p>
+        </section>
+        
+        <section class="attribute-selector">
+            <h2>Attribute Selector</h2>
+            <input type="text" placeholder="Text input">
+            <input type="email" placeholder="Email input">
+            <a href="https://example.com" target="_blank">External Link</a>
+            <a href="/local-page">Internal Link</a>
+        </section>
+        
+        <section class="combinators">
+            <h2>Combinators</h2>
+            <div class="parent">
+                <p>Direct child paragraph (>)</p>
+                <span>
+                    <p>Descendant paragraph</p>
+                </span>
+            </div>
+            <p>Adjacent sibling paragraph (+)</p>
+            <p>General sibling paragraph (~)</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Demonstrating different CSS selectors</p>
+    </footer>
+</body>
+</html>

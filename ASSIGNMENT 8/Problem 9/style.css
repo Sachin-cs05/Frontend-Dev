@@ -1,0 +1,233 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.effects-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.effects-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 15px;
+}
+
+.effects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.effect-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.effect-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.effect-card h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+/* Base effect button styles */
+.effect-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+/* Scale and color change effect */
+.scale-color {
+    background-color: #007bff;
+    color: white;
+}
+
+.scale-color:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.scale-color:active {
+    transform: scale(0.95);
+}
+
+/* Shadow and rotation effect */
+.shadow-rotate {
+    background-color: #28a745;
+    color: white;
+}
+
+.shadow-rotate:hover {
+    box-shadow: 0 8px 15px rgba(40, 167, 69, 0.4);
+    transform: rotate(5deg);
+}
+
+.shadow-rotate:active {
+    transform: rotate(0deg) scale(0.95);
+}
+
+/* Slide and fade effect */
+.slide-fade {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.slide-fade:hover {
+    transform: translateX(10px);
+    opacity: 0.8;
+}
+
+.slide-fade:active {
+    transform: translateX(5px);
+}
+
+/* 3D transform effect */
+.transform-3d {
+    background-color: #6f42c1;
+    color: white;
+    perspective: 1000px;
+}
+
+.transform-3d:hover {
+    transform: rotateY(15deg) rotateX(15deg);
+    box-shadow: 0 10px 20px rgba(111, 66, 193, 0.4);
+}
+
+.transform-3d:active {
+    transform: rotateY(0deg) rotateX(0deg) scale(0.95);
+}
+
+.effect-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Additional examples */
+.additional-examples {
+    margin-top: 30px;
+}
+
+.additional-examples h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.example-container {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.combined-effect-box {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 15px;
+}
+
+.combined-effect-box:hover {
+    background-color: #dc3545;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 25px rgba(220, 53, 69, 0.4);
+}
+
+.combined-effect-box:active {
+    transform: scale(0.95);
+}
+
+.focus-effect {
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 300px;
+    max-width: 100%;
+}
+
+.focus-effect:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+}
+
+.example-container p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}

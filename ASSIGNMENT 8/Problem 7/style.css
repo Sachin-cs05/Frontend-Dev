@@ -1,0 +1,229 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ui-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.card h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.component-group {
+    margin-bottom: 25px;
+}
+
+.component-group h3 {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Search bar styling */
+.search-bar-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #5a6fd8;
+}
+
+.search-button:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Button styling */
+.ui-button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ui-button.primary {
+    background-color: #667eea;
+    color: white;
+}
+
+.ui-button.primary:hover {
+    background-color: #5a6fd8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.ui-button.primary:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+.ui-button.secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.ui-button.secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.ui-button.secondary:focus {
+    outline: 2px solid #6c757d;
+    outline-offset: 2px;
+}
+
+.ui-button.accent {
+    background-color: #764ba2;
+    color: white;
+}
+
+.ui-button.accent:hover {
+    background-color: #653d8a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.ui-button.accent:focus {
+    outline: 2px solid #764ba2;
+    outline-offset: 2px;
+}
+
+/* Dropdown styling */
+.dropdown {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Form elements */
+.sample-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input, .form-textarea {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.form-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+}
