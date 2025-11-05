@@ -1,0 +1,200 @@
+/* Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #3498db;
+    margin: 30px 0 20px;
+}
+
+h3 {
+    color: #e74c3c;
+    margin: 15px 0 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.box-model-demo {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+/* Default box model (content-box) */
+.default-box {
+    /* Content dimensions */
+    width: 200px;
+    height: 200px;
+    
+    /* Padding */
+    padding: 25px;
+    
+    /* Border */
+    border: 10px solid #3498db;
+    
+    /* Margin */
+    margin: 20px;
+    
+    /* Visual styling */
+    background-color: #dff0ff;
+    color: #1a5ca3;
+    
+    /* Box model explicitly set to content-box */
+    box-sizing: content-box;
+}
+
+/* Border-box model */
+.border-box {
+    /* Content dimensions */
+    width: 250px;
+    height: 250px;
+    
+    /* Padding */
+    padding: 25px;
+    
+    /* Border */
+    border: 10px solid #e74c3c;
+    
+    /* Margin */
+    margin: 20px;
+    
+    /* Visual styling */
+    background-color: #fdecea;
+    color: #a82215;
+    
+    /* Box model explicitly set to border-box */
+    box-sizing: border-box;
+}
+
+.description {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+}
+
+/* Explanation section */
+.explanation {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.layers-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.margin-layer {
+    width: 300px;
+    height: 300px;
+    background-color: #e8f4fc;
+    padding: 40px;
+    outline: 2px dashed #3498db;
+    outline-offset: 5px;
+}
+
+.border-layer {
+    width: 100%;
+    height: 100%;
+    background-color: #d1e7ff;
+    border: 15px solid #3498db;
+    padding: 30px;
+}
+
+.padding-layer {
+    width: 100%;
+    height: 100%;
+    background-color: #b8daff;
+    padding: 20px;
+}
+
+.content-layer {
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.layer-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.layer-description {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.layer-description h3 {
+    margin-top: 0;
+}
+
+.layer-description:nth-child(1) h3 {
+    color: #3498db;
+}
+
+.layer-description:nth-child(2) h3 {
+    color: #2ecc71;
+}
+
+.layer-description:nth-child(3) h3 {
+    color: #f39c12;
+}
+
+.layer-description:nth-child(4) h3 {
+    color: #9b59b6;
+}
+
+p {
+    margin-bottom: 15px;
+}

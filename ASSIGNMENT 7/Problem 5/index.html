@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advanced CSS Selectors Demonstration</h1>
+    
+    <div class="container">
+        <section class="attribute-selectors">
+            <h2>Attribute Selectors</h2>
+            <input type="text" placeholder="Text input">
+            <input type="email" placeholder="Email input">
+            <a href="https://example.com">Secure link</a>
+            <a href="http://example.com">Regular link</a>
+            <p class="highlight" data-category="important">This paragraph has a data attribute</p>
+        </section>
+        
+        <section class="pseudo-classes">
+            <h2>Pseudo-classes</h2>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+                <li>Fifth item</li>
+            </ul>
+            <div class="focus-demo">
+                <input type="text" placeholder="Focus on me">
+            </div>
+        </section>
+        
+        <section class="pseudo-elements">
+            <h2>Pseudo-elements</h2>
+            <p class="first-line-demo">This paragraph demonstrates the ::first-line pseudo-element. 
+               The first line of this paragraph will have different styling than the rest of the text.</p>
+            
+            <p class="before-after-demo">This paragraph has content added with ::before and ::after pseudo-elements.</p>
+        </section>
+        
+        <section class="combinators">
+            <h2>Combinators</h2>
+            <div class="parent">
+                <p>This is a direct child paragraph</p>
+                <div class="child">
+                    <p>This is a descendant paragraph</p>
+                </div>
+                <p>This is another direct child paragraph</p>
+            </div>
+            <p class="adjacent">This paragraph is adjacent to the div above</p>
+            <p class="sibling">This paragraph is a sibling to the paragraph above</p>
+        </section>
+    </div>
+</body>
+</html>

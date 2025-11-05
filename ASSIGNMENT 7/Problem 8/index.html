@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Box Model Exploration</h1>
+    
+    <div class="container">
+        <div class="box-model-demo default-box">
+            <p>Default Box Model</p>
+            <span class="description">This box demonstrates the default box model (content-box).</span>
+        </div>
+        
+        <div class="box-model-demo border-box">
+            <p>Border-Box Model</p>
+            <span class="description">This box demonstrates the border-box model.</span>
+        </div>
+    </div>
+    
+    <div class="explanation">
+        <h2>Understanding the CSS Box Model</h2>
+        <p>In CSS, the box model describes the rectangular boxes that are generated for elements in the document tree. Each box has four edges:</p>
+        
+        <div class="layers-container">
+            <div class="margin-layer">
+                <div class="border-layer">
+                    <div class="padding-layer">
+                        <div class="content-layer">
+                            Content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="layer-descriptions">
+            <div class="layer-description">
+                <h3>Content</h3>
+                <p>The content area where text and images appear.</p>
+            </div>
+            <div class="layer-description">
+                <h3>Padding</h3>
+                <p>Transparent area around the content inside the border.</p>
+            </div>
+            <div class="layer-description">
+                <h3>Border</h3>
+                <p>The edge surrounding the padding (if any) and content.</p>
+            </div>
+            <div class="layer-description">
+                <h3>Margin</h3>
+                <p>Transparent area outside the border, separating elements.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

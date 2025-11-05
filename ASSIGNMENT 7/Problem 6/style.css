@@ -1,0 +1,94 @@
+/* Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.description {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Rotate Transformation */
+.rotate-box {
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    color: white;
+}
+
+.rotate-box:hover {
+    transform: rotate(45deg);
+}
+
+/* Scale Transformation */
+.scale-box {
+    background: linear-gradient(45deg, #2ecc71, #f1c40f);
+    color: white;
+}
+
+.scale-box:hover {
+    transform: scale(1.2);
+}
+
+/* Translate Transformation */
+.translate-box {
+    background: linear-gradient(45deg, #e74c3c, #e67e22);
+    color: white;
+}
+
+.translate-box:hover {
+    transform: translate(20px, -20px);
+}
+
+/* Skew Transformation */
+.skew-box {
+    background: linear-gradient(45deg, #9b59b6, #1abc9c);
+    color: white;
+}
+
+.skew-box:hover {
+    transform: skew(20deg, 10deg);
+}
