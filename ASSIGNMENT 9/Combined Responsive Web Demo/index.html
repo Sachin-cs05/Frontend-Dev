@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Responsive Web Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="logo">ResponsiveDemo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content-grid">
+            <section class="image-gallery">
+                <h2>Image Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/300/200?random=1" alt="Gallery Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/300/200?random=2" alt="Gallery Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/300/200?random=3" alt="Gallery Image 3">
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-explanation">
+                <h2>Responsive Design Explanation</h2>
+                <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD.</p>
+                <p>Content, design and performance are necessary across all devices to ensure usability and satisfaction. A flexible grid system, flexible images, and media queries are the three technical ingredients for responsive web design.</p>
+            </section>
+
+            <section class="cheat-sheet-preview">
+                <h2>Cheat Sheet Preview</h2>
+                <div class="preview-box">
+                    <h3>Flexbox</h3>
+                    <p>display: flex;<br>justify-content: center;<br>align-items: center;</p>
+                </div>
+                <div class="preview-box">
+                    <h3>Grid</h3>
+                    <p>display: grid;<br>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Contact us: info@responsivedemo.com | Phone: (123) 456-7890</p>
+        </footer>
+    </div>
+</body>
+</html>

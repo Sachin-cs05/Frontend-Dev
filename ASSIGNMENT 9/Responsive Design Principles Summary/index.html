@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Core Principles of Responsive Design</h1>
+        <div class="principles-grid">
+            <div class="principle-box">
+                <h2>Fluid Layouts</h2>
+                <p>Fluid layouts use relative units like percentages instead of fixed units like pixels to define width and other properties.</p>
+                <code>.container {<br>&nbsp;&nbsp;width: 90%;<br>&nbsp;&nbsp;max-width: 1200px;<br>&nbsp;&nbsp;margin: 0 auto;<br>}</code>
+            </div>
+            <div class="principle-box">
+                <h2>Flexible Media</h2>
+                <p>Flexible media ensures images, videos, and other media elements scale appropriately within their containing elements.</p>
+                <code>img {<br>&nbsp;&nbsp;max-width: 100%;<br>&nbsp;&nbsp;height: auto;<br>}</code>
+            </div>
+            <div class="principle-box">
+                <h2>Breakpoints</h2>
+                <p>Breakpoints are screen widths that trigger changes in layout through media queries to optimize for different devices.</p>
+                <code>@media (max-width: 768px) {<br>&nbsp;&nbsp;.grid {<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>&nbsp;&nbsp;}<br>}</code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
