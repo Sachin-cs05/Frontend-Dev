@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="h3 mb-0">Task Tracker</h1>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span class="badge bg-light text-dark fs-6">Pending Tasks: <span id="task-count">8</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">My Tasks</h2>
+                
+                <div class="d-flex justify-content-between mb-3">
+                    <button class="btn btn-success">
+                        Completed <span class="badge bg-white text-success">3</span>
+                    </button>
+                    <button class="btn btn-primary">Add New Task</button>
+                </div>
+                
+                <div class="list-group">
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Design Homepage Layout</h5>
+                            <p class="mb-1">Create wireframes for the new homepage design</p>
+                            <small class="text-muted">Due: Tomorrow</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">High</span>
+                    </div>
+                    
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Review Client Feedback</h5>
+                            <p class="mb-1">Analyze feedback from the beta testing phase</p>
+                            <small class="text-muted">Due: Today</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">High</span>
+                    </div>
+                    
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Update Documentation</h5>
+                            <p class="mb-1">Revise user guides for version 2.1</p>
+                            <small class="text-muted">Due: Next Week</small>
+                        </div>
+                        <span class="badge bg-warning rounded-pill text-dark">Medium</span>
+                    </div>
+                    
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Fix Login Bug</h5>
+                            <p class="mb-1">Resolve authentication issue on mobile devices</p>
+                            <small class="text-muted">Due: Today</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">High</span>
+                    </div>
+                    
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Prepare Presentation</h5>
+                            <p class="mb-1">Create slides for quarterly review meeting</p>
+                            <small class="text-muted">Due: Friday</small>
+                        </div>
+                        <span class="badge bg-warning rounded-pill text-dark">Medium</span>
+                    </div>
+                    
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Code Refactoring</h5>
+                            <p class="mb-1">Optimize performance of data processing module</p>
+                            <small class="text-muted">Due: Next Week</small>
+                        </div>
+                        <span class="badge bg-success rounded-pill">Low</span>
+                    </div>
+                    
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Team Meeting</h5>
+                            <p class="mb-1">Weekly sync with development team</p>
+                            <small class="text-muted">Due: Today 3:00 PM</small>
+                        </div>
+                        <span class="badge bg-warning rounded-pill text-dark">Medium</span>
+                    </div>
+                    
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">Research New Framework</h5>
+                            <p class="mb-1">Evaluate potential alternatives to current stack</p>
+                            <small class="text-muted">Due: Next Month</small>
+                        </div>
+                        <span class="badge bg-success rounded-pill">Low</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 TaskMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

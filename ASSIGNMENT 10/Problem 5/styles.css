@@ -1,0 +1,84 @@
+:root {
+    --bs-primary: #6a0dad;
+    --bs-font-sans-serif: 'Raleway', sans-serif;
+    --bs-font-serif: 'Playfair Display', serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #f8f0ff;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--bs-font-serif);
+}
+
+header {
+    background: linear-gradient(135deg, var(--bs-primary), #4b0082);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(106, 13, 173, 0.2) !important;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #5a0c9d;
+    border-color: #5a0c9d;
+}
+
+.badge {
+    background-color: #8a2be2;
+}
+
+footer {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    margin-top: auto;
+}
+
+.display-4 {
+    font-weight: 700;
+}
+
+.display-5 {
+    color: var(--bs-primary);
+    font-weight: 700;
+}
+
+.card-title {
+    color: var(--bs-primary);
+}
+
+.img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .text-md-end {
+        text-align: left !important;
+    }
+}
