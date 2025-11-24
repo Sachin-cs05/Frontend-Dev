@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6 - Event Subscription Panel</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .subscription-panel {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .subscription-item {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #2196F3;
+        }
+        .subscription-item.subscribed {
+            border-left: 4px solid #4CAF50;
+        }
+        .subscription-item.unsubscribed {
+            border-left: 4px solid #f44336;
+        }
+        .subscription-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .subscription-title {
+            font-weight: bold;
+        }
+        .subscription-actions button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .subscription-actions button.unsubscribe {
+            background-color: #f44336;
+        }
+        .subscription-actions button:hover {
+            opacity: 0.8;
+        }
+        .add-subscription {
+            margin-top: 20px;
+        }
+        .add-subscription input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .add-subscription button {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .add-subscription button:hover {
+            background-color: #f57c00;
+        }
+        .message {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: none;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Subscription Panel</h1>
+    
+    <div class="subscription-panel">
+        <h2>Your Subscriptions</h2>
+        
+        <!-- Subscription 1 -->
+        <div class="subscription-item" id="sub1">
+            <div class="subscription-header">
+                <div class="subscription-title">Technology Updates</div>
+                <div class="subscription-actions">
+                    <button class="subscribe-btn">Subscribe</button>
+                    <button class="unsubscribe-btn">Unsubscribe</button>
+                </div>
+            </div>
+            <p>Get the latest news and updates about new technology trends.</p>
+        </div>
+        
+        <!-- Subscription 2 -->
+        <div class="subscription-item" id="sub2">
+            <div class="subscription-header">
+                <div class="subscription-title">Marketing News</div>
+                <div class="subscription-actions">
+                    <button class="subscribe-btn">Subscribe</button>
+                    <button class="unsubscribe-btn">Unsubscribe</button>
+                </div>
+            </div>
+            <p>Stay informed about marketing strategies and industry insights.</p>
+        </div>
+        
+        <!-- Subscription 3 -->
+        <div class="subscription-item" id="sub3">
+            <div class="subscription-header">
+                <div class="subscription-title">Product Launches</div>
+                <div class="subscription-actions">
+                    <button class="subscribe-btn">Subscribe</button>
+                    <button class="unsubscribe-btn">Unsubscribe</button>
+                </div>
+            </div>
+            <p>Be the first to know about new product releases and features.</p>
+        </div>
+        
+        <!-- Subscription 4 -->
+        <div class="subscription-item" id="sub4">
+            <div class="subscription-header">
+                <div class="subscription-title">Company Announcements</div>
+                <div class="subscription-actions">
+                    <button class="subscribe-btn">Subscribe</button>
+                    <button class="unsubscribe-btn">Unsubscribe</button>
+                </div>
+            </div>
+            <p>Important company news and policy updates.</p>
+        </div>
+        
+        <!-- Subscription 5 -->
+        <div class="subscription-item" id="sub5">
+            <div class="subscription-header">
+                <div class="subscription-title">Special Offers</div>
+                <div class="subscription-actions">
+                    <button class="subscribe-btn">Subscribe</button>
+                    <button class="unsubscribe-btn">Unsubscribe</button>
+                </div>
+            </div>
+            <p>Exclusive discounts and promotional offers.</p>
+        </div>
+        
+        <!-- Add new subscription -->
+        <div class="add-subscription">
+            <input type="text" id="newSubscription" placeholder="Enter new subscription topic...">
+            <button id="addSubscription">Add Subscription</button>
+        </div>
+        
+        <!-- Success message -->
+        <div class="message success" id="successMessage">
+            Subscription action completed successfully!
+        </div>
+    </div>
+
+    <script src="event-subscription-panel.js"></script>
+</body>
+</html>

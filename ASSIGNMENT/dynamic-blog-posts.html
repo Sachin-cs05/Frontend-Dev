@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 - Dynamic Blog Posts</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .admin-panel {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .panel-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button.remove {
+            background-color: #f44336;
+        }
+        button.remove:hover {
+            background-color: #d32f2f;
+        }
+        button.featured {
+            background-color: #ff9800;
+        }
+        button.featured:hover {
+            background-color: #f57c00;
+        }
+        .blog-posts-container {
+            margin-top: 20px;
+        }
+        .blog-post {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .featured-post {
+            border-left: 5px solid #ff9800;
+            background-color: #fff8e1;
+        }
+        .post-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .post-meta {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .post-content {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .tag {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        .highlight-keyword {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Blog Posts</h1>
+    
+    <div class="admin-panel">
+        <h2>Admin Panel</h2>
+        <div class="panel-buttons">
+            <button id="addPost">Add New Post</button>
+            <button id="prependFeatured">Prepend Featured Post</button>
+            <button id="removeLast" class="remove">Remove Last Post</button>
+        </div>
+    </div>
+    
+    <div class="blog-posts-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <div class="post-title">Getting Started with jQuery</div>
+            <div class="post-meta">Published on May 15, 2023 by John Doe</div>
+            <div class="post-content">
+                <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</p>
+                <p>In this post, we'll cover the basics of jQuery and how to get started with it in your projects.</p>
+            </div>
+            <div class="post-tags">
+                <span class="tag">jQuery</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Web Development</span>
+            </div>
+        </div>
+        
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <div class="post-title">CSS Grid vs Flexbox: When to Use Which</div>
+            <div class="post-meta">Published on June 2, 2023 by Jane Smith</div>
+            <div class="post-content">
+                <p>CSS Grid and Flexbox are both powerful layout systems in CSS, but they serve different purposes. Understanding when to use each one is crucial for efficient web development.</p>
+                <p>In this article, we'll explore the differences between CSS Grid and Flexbox and provide guidelines on when to use each layout method.</p>
+            </div>
+            <div class="post-tags">
+                <span class="tag">CSS</span>
+                <span class="tag">Layout</span>
+                <span class="tag">Web Design</span>
+            </div>
+        </div>
+        
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <div class="post-title">Building Responsive Websites</div>
+            <div class="post-meta">Published on June 20, 2023 by Alex Johnson</div>
+            <div class="post-content">
+                <p>With the increasing variety of devices and screen sizes, building responsive websites has become essential. A responsive design ensures that your website looks and functions well on all devices.</p>
+                <p>This guide will walk you through the principles of responsive web design and practical techniques to implement it.</p>
+            </div>
+            <div class="post-tags">
+                <span class="tag">Responsive Design</span>
+                <span class="tag">Mobile</span>
+                <span class="tag">Web Development</span>
+            </div>
+        </div>
+        
+        <!-- Blog Post 4 -->
+        <div class="blog-post">
+            <div class="post-title">JavaScript ES6 Features You Should Know</div>
+            <div class="post-meta">Published on July 5, 2023 by Sarah Williams</div>
+            <div class="post-content">
+                <p>ES6 (ECMAScript 2015) introduced many new features to JavaScript that make the language more powerful and easier to work with. Features like arrow functions, template literals, and destructuring have become standard in modern JavaScript development.</p>
+                <p>In this post, we'll explore the most important ES6 features and how they can improve your code.</p>
+            </div>
+            <div class="post-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">ES6</span>
+                <span class="tag">Programming</span>
+            </div>
+        </div>
+        
+        <!-- Blog Post 5 -->
+        <div class="blog-post">
+            <div class="post-title">Introduction to Node.js</div>
+            <div class="post-meta">Published on July 18, 2023 by Michael Brown</div>
+            <div class="post-content">
+                <p>Node.js is a powerful runtime environment that allows you to run JavaScript on the server side. It's built on Chrome's V8 JavaScript engine and has revolutionized backend development.</p>
+                <p>This introduction will cover what Node.js is, its key features, and how to get started with building server-side applications.</p>
+            </div>
+            <div class="post-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Backend</span>
+                <span class="tag">JavaScript</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="dynamic-blog-posts.js"></script>
+</body>
+</html>
